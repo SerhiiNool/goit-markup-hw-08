@@ -73,10 +73,20 @@
 }
 .advantages {
   display: flex;
-  margin-top: 0px;
-  margin-bottom: 0px;
+  margin: 0 auto;
   padding-left: 0px;
   list-style: none;
+
+  @media screen and (max-width: 480px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  @media screen and (max-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
 }
 
 .advantages-element {
@@ -101,27 +111,60 @@
 }
 
 /*----------WORK-SECTION---------*/
+
 .work-flex {
   display: flex;
-  padding: 0px 0px;
-  margin: 0px;
-  list-style: none;
-}
-.team {
-  padding-bottom: 94px;
-}
-.side-text {
-  font-size: 36px;
-  line-height: 1.16;
-  text-align: center;
-  letter-spacing: 0.03em;
-  margin-bottom: 50px;
+  padding: 0px;
   margin-top: 0px;
+  list-style: none;
+  justify-content: center;
 }
+
 .work-img {
   position: relative;
-  &:not(:last-child) {
-    margin-right: 30px;
+  margin-right: 30px;
+  margin-left: -30px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  max-width: 100%;
+  height: auto;
+  flex-wrap: wrap;
+}
+
+.team {
+  padding-bottom: 94px;
+
+  @media screen and (max-width: 1199px) {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+  }
+}
+.side-text {
+  // font-size: 36px;
+  // line-height: 1.16;
+  // text-align: center;
+  // letter-spacing: 0.03em;
+  // margin-bottom: 50px;
+  // margin-top: 0px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: center;
+  margin-top: 0px;
+
+  color: var(--black-text);
+
+  @media screen and (min-width: 480px) {
+    margin-bottom: 30px;
   }
 }
 
@@ -160,26 +203,34 @@
   padding: 94px 0px;
 }
 .masters-flex {
-  // display: flex;
-  // flex-wrap: wrap;
-  // padding: 0px;
-  // margin: 0px;
+  margin: 0px;
   list-style: none;
+  display: block;
+  @media screen and (min-width: 480px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
 }
 .masters {
+  display: block;
   background: #ffffff;
   padding-bottom: 30px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 
+  margin-left: auto;
+  margin-right: auto;
+  perspective: 600px;
   margin-bottom: 30px;
-
-  @media screen {
-  }
-}
-.masters:not(:last-child) {
   margin-right: 30px;
+  margin-left: -30px;
 }
 
 .name {
