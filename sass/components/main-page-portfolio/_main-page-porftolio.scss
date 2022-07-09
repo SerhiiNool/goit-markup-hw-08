@@ -1,8 +1,10 @@
 .portfolio-section {
   padding: 94px 0px;
-  margin: 0;
 }
-
+.portfolio-foto {
+  max-width: 100%;
+  height: auto;
+}
 .urll {
   font-family: 'Roboto';
   font-style: normal;
@@ -76,15 +78,22 @@
   padding: 0px;
   margin: 0px;
 }
-.portfolio-foto {
-  display: block;
-  overflow: hidden;
-  width: auto;
+.company {
+  padding: 0px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
 }
-
+.img-company {
+  padding: 0px;
+  background: #ffffff;
+  display: block;
+  max-width: 300px;
+  justify-content: space-arounds;
+}
 .portfolio-elements {
   display: block;
-  margin: 0;
   text-decoration: none;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -124,43 +133,4 @@
 .portfolio-elements:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
-.company {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  height: auto;
-  flex-wrap: wrap;
-  justify-content: center;
-  @media screen and (max-width: 480px) {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 0;
-  }
-  @media screen and (max-width: 1200px) {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin: 0;
-  }
-}
-.img-company {
-  margin: 15px;
-  padding: 0px;
-  background: #ffffff;
-  display: flex;
-
-  justify-content: center;
-  @media screen and (max-width: 480px) {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  @media screen and (max-width: 1199px) {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-  }
 }
