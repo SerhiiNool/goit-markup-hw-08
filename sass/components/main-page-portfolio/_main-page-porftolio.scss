@@ -1,10 +1,6 @@
 .portfolio-section {
   padding: 94px 0px;
-  display: flex;
-  padding: 0;
-  margin: 0 auto;
-  list-style: none;
-  justify-content: center;
+  margin: 0;
 }
 
 .urll {
@@ -80,9 +76,15 @@
   padding: 0px;
   margin: 0px;
 }
+.portfolio-foto {
+  display: block;
+  overflow: hidden;
+  width: auto;
+}
 
 .portfolio-elements {
   display: block;
+  margin: 0;
   text-decoration: none;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -125,11 +127,13 @@
 }
 
 .company {
+  margin: 0;
   padding: 0;
-  margin: 0 auto;
-  justify-content: center;
   list-style: none;
-  display: block;
+  height: auto;
+  flex-wrap: wrap;
+  justify-content: center;
+
   @media screen and (max-width: 480px) {
     display: flex;
     flex-wrap: wrap;
@@ -139,7 +143,7 @@
   @media screen and (max-width: 1200px) {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
     margin: 0;
   }
 }
@@ -147,17 +151,18 @@
   margin: 15px;
   padding: 0px;
   background: #ffffff;
-  display: flex;
+  display: block;
   width: auto;
+  height: auto;
   flex-wrap: wrap;
   justify-content: center;
   @media screen and (max-width: 480px) {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 0 auto;
+    margin: 0;
   }
-  @media screen and (min-width: 481px) {
+  @media screen and (max-width: 1199px) {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
