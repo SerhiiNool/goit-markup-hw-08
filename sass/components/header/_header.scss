@@ -1,3 +1,4 @@
+
 .header {
   text-decoration: none;
   background: var(--white-color);
@@ -17,6 +18,18 @@
   align-items: center;
   padding-left: 0px;
   list-style: none;
+  @media screen and (max-width: 1199px) {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+  }
 }
 
 .icon-tel,
@@ -37,6 +50,9 @@
   margin-right: 93px;
   display: block;
   text-decoration: none;
+
+  @media screen and (max-width: 1200px) {
+    margin-left: 0;
 }
 
 .first-name {
@@ -48,6 +64,18 @@
   padding-left: 0px;
   margin: 0px;
   list-style: none;
+  @media screen and (max-width: 1199px) {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+  }
 }
 
 .title-curent {
@@ -164,6 +192,6 @@
 .item-tel:hover .icon-tel {
   fill: var(--blue-color);
 }
+
 .item-tel:focus .icon-tel {
-  fill: var(--blue-color);
-}
+  fill: var(--blue-color); }
