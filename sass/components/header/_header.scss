@@ -1,4 +1,3 @@
-
 .header {
   text-decoration: none;
   background: var(--white-color);
@@ -53,8 +52,8 @@
 
   @media screen and (max-width: 1200px) {
     margin-left: 0;
+  }
 }
-
 .first-name {
   color: var(--black-text);
 }
@@ -194,4 +193,5 @@
 }
 
 .item-tel:focus .icon-tel {
-  fill: var(--blue-color); }
+  fill: var(--blue-color);
+}

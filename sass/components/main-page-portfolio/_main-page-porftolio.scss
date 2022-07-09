@@ -133,7 +133,6 @@
   height: auto;
   flex-wrap: wrap;
   justify-content: center;
-
   @media screen and (max-width: 480px) {
     display: flex;
     flex-wrap: wrap;
@@ -143,7 +142,7 @@
   @media screen and (max-width: 1200px) {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
     margin: 0;
   }
 }
@@ -151,16 +150,13 @@
   margin: 15px;
   padding: 0px;
   background: #ffffff;
-  display: block;
-  width: auto;
-  height: auto;
-  flex-wrap: wrap;
+  display: flex;
+
   justify-content: center;
   @media screen and (max-width: 480px) {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 0;
   }
   @media screen and (max-width: 1199px) {
     display: flex;

@@ -131,14 +131,9 @@ body {
   display: block;
   text-decoration: none;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1200px) {
   .nav-logo {
-    font-family: "Raleway";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 28px;
-    letter-spacing: 0.03em;
+    margin-left: 0;
   }
 }
 
@@ -678,7 +673,7 @@ body {
             justify-content: center;
   }
 }
-@media screen and (mix-width: 481px) {
+@media screen and (min-width: 481px) {
   .masters {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -880,6 +875,7 @@ body {
 
 .portfolio-section {
   padding: 94px 0px;
+  margin: 0;
 }
 
 .urll {
@@ -962,45 +958,15 @@ body {
   margin: 0px;
 }
 
-.img-company {
-  margin: 15px;
-  padding: 0px;
-  background: #ffffff;
+.portfolio-foto {
   display: block;
-  max-width: 370px;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-@media screen and (max-width: 480px) {
-  .img-company {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-}
-@media screen and (max-width: 1200px) {
-  .img-company {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    margin-right: 0px;
-  }
+  overflow: hidden;
+  width: auto;
 }
 
 .portfolio-elements {
   display: block;
+  margin: 0;
   text-decoration: none;
   -webkit-transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1055,15 +1021,75 @@ body {
 }
 
 .company {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  height: auto;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+@media screen and (max-width: 480px) {
+  .company {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .company {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin: 0;
+  }
+}
+
+.img-company {
+  margin: 15px;
   padding: 0px;
-  margin: 0px;
+  background: #ffffff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  margin: -15px;
-  list-style: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+@media screen and (max-width: 480px) {
+  .img-company {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .img-company {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
 }
 
 .footer-list {
