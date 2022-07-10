@@ -1,6 +1,11 @@
-@import './base/base';
-@import './components/header/header';
-@import './components/main-page-studio/main-page-studio';
-@import './components/main-page-portfolio/main-page-porftolio';
-@import './components/footer/footer';
-@import './components/modal/modal';
+@import './utils/var';
+@import './utils/general';
+@import './components/header';
+@import './components/section-hero';
+@import './components/section-benefits';
+@import './components/section-what-we-do';
+@import './components/section-our-teem';
+@import './components/section-clients';
+@import './components/footer';
+@import './components/modal';
+@import './components/portfolio';
