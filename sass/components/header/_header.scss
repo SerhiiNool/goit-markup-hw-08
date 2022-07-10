@@ -50,7 +50,7 @@
   display: block;
   text-decoration: none;
 
-  @media screen and (max-width: 1200px) {
+  @media screen and (max-width: 1199px) {
     margin-left: 0;
   }
 }
@@ -193,5 +193,46 @@
 }
 
 .item-tel:focus .icon-tel {
+  fill: var(--blue-color);
+}
+.menu {
+  margin-left: auto;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  @media screen and (min-width: 1200px) {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+  }
+}
+.icon-menu {
+  color: #212121;
+  display: block;
+  @media screen and (min-width: 1200px) {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+  }
+}
+.icon-menu:hover,
+.icon-menu:focus {
   fill: var(--blue-color);
 }
