@@ -69,6 +69,14 @@
     width: 270px;
   }
 }
+.photo {
+   @media screen and (min-width: 480px) {
+    width: 354px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+  }
+}
 .caption-name {
   font-weight: 500;
   font-size: 16px;
